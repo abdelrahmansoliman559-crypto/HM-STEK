@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HM STEK</title>
+<meta name="description" content="تعرّف على عنوان ورقم وساعات عمل كل فرع من فروع STEK المعتمدة، وابحث عن أقرب فرع لك بالمدينة أو الحي.">
+<link rel="stylesheet" href="assets/style-sub.css">
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22Z" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="9.3" r="2.6" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+  <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M6 3h3l2 5-2.4 1.6a12 12 0 0 0 5.8 5.8L16 13l5 2v3a2 2 0 0 1-2 2C10.7 20 4 13.3 4 5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M12 7v5l4 2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="ic-check" viewBox="0 0 20 20"><path d="M4 10.5 8 15l8-10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="m21 21-4.3-4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+</svg>
+
+<header class="nav" id="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="STEK">
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="packages.html">الباقات</a></li>
+        <li><a href="#warranty">الضمان</a></li>
+        <li><a href="branches.html">فروعنا</a></li>
+        <li><a href="franchise.html">قطاع الاعمال</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="contact.html?choice=booking" class="btn btn-primary">احجز موعد</a>
+    </div>
+
+    <button class="nav-burger" id="navBurger" aria-label="القائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">الرئيسية</a><span>/</span><span>فروعنا</span></div>
+    <h1>وين ما كنت، STEK أقرب لك</h1>
+    <p>8 فروع معتمدة داخل المملكة. دوّري بالمدينة أو الحي وشوفي بيانات الفرع كاملة، وامسحي كود QR للوصول السريع لموقعه على الخريطة.</p>
+  </div>
+</section>
+
+<!-- ============ SEARCH BAR ============ -->
+<div class="branch-search-bar">
+  <div class="container">
+    <div class="search-box">
+      <svg><use href="#ic-search"/></svg>
+      <input type="text" id="branchSearch" placeholder="ابحث بالمدينة أو الحي… مثال: جدة، العليا، الفيصلية">
+    </div>
+    <span class="search-count">8 من 8 فرع</span>
+  </div>
+</div>
+
+<!-- ============ BRANCHES GRID ============ -->
+<section class="branches-directory">
+  <div class="container">
+
+    <div class="branch-grid">
+
+      <article class="branch-card reveal" data-search="جدة الفيصلية مركز الخريف">
+        <div>
+          <div class="branch-card-head">
+            <div><h3>فرع جدة</h3><div class="district">حي الفيصلية — المقر الرئيسي</div></div>
+            <span class="verified-badge"><svg><use href="#ic-check"/></svg>فرع معتمد</span>
+          </div>
+          <ul class="branch-detail-list">
+            <li><svg><use href="#ic-pin"/></svg><div><b>العنوان</b>مركز الخريف التجاري، مكتب 605، طريق المدينة المنورة، جدة</div></li>
+            <li><svg><use href="#ic-phone"/></svg><div><b>الجوال</b>0534805488</div></li>
+            <li><svg><use href="#ic-clock"/></svg><div><b>ساعات العمل</b>السبت–الخميس 9ص–10م · الجمعة 4م–10م</div></li>
+          </ul>
+          <div class="branch-card-actions">
+            <a href="tel:0534805488" class="btn btn-outline">اتصل بالفرع</a>
+            <a href="contact.html?choice=booking" class="btn btn-primary">احجز موعد</a>
+          </div>
+        </div>
+        <div class="branch-qr">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&bgcolor=ffffff&color=0a0a0b&data=https://www.google.com/maps/search/?api=1%26query=STEK+%D8%AC%D8%AF%D8%A9+%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D9%81+%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A" alt="QR كود موقع فرع جدة">
+          <span>امسح للوصول للموقع</span>
+        </div>
+      </article>
+
+      <article class="branch-card reveal" data-search="مكة المكرمة العزيزية">
+        <div>
+          <div class="branch-card-head">
+            <div><h3>فرع مكة المكرمة</h3><div class="district">حي العزيزية</div></div>
+            <span class="verified-badge"><svg><use href="#ic-check"/></svg>فرع معتمد</span>
+          </div>
+          <ul class="branch-detail-list">
+            <li><svg><use href="#ic-pin"/></svg><div><b>العنوان</b>حي العزيزية، طريق الحرم، مكة المكرمة</div></li>
+            <li><svg><use href="#ic-phone"/></svg><div><b>الجوال</b>0541122334</div></li>
+            <li><svg><use href="#ic-clock"/></svg><div><b>ساعات العمل</b>السبت–الخميس 9ص–10م · الجمعة 4م–10م</div></li>
+          </ul>
+          <div class="branch-card-actions">
+            <a href="tel:0541122334" class="btn btn-outline">اتصل بالفرع</a>
+            <a href="contact.html?choice=booking" class="btn btn-primary">احجز موعد</a>
+          </div>
+        </div>
+        <div class="branch-qr">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&bgcolor=ffffff&color=0a0a0b&data=https://www.google.com/maps/search/?api=1%26query=STEK+%D9%85%D9%83%D8%A9+%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9" alt="QR كود موقع فرع مكة">
+          <span>امسح للوصول للموقع</span>
+        </div>
+      </article>
+
+      <article class="branch-card reveal" data-search="الرياض العليا">
+        <div>
+          <div class="branch-card-head">
+            <div><h3>فرع الرياض</h3><div class="district">حي العليا</div></div>
+            <span class="verified-badge"><svg><use href="#ic-check"/></svg>فرع معتمد</span>
+          </div>
+          <ul class="branch-detail-list">
+            <li><svg><use href="#ic-pin"/></svg><div><b>العنوان</b>حي العليا، طريق الملك فهد، الرياض</div></li>
+            <li><svg><use href="#ic-phone"/></svg><div><b>الجوال</b>0541122335</div></li>
+            <li><svg><use href="#ic-clock"/></svg><div><b>ساعات العمل</b>السبت–الخميس 9ص–10م · الجمعة 4م–10م</div></li>
+          </ul>
+          <div class="branch-card-actions">
+            <a href="tel:0541122335" class="btn btn-outline">اتصل بالفرع</a>
+            <a href="contact.html?choice=booking" class="btn btn-primary">احجز موعد</a>
+          </div>
+        </div>
+        <div class="branch-qr">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&bgcolor=ffffff&color=0a0a0b&data=https://www.google.com/maps/search/?api=1%26query=STEK+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6+%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7" alt="QR كود موقع فرع الرياض">
+          <span>امسح للوصول للموقع</span>
+        </div>
+      </article>
+
+      <article class="branch-card reveal" data-search="الدمام الشاطئ">
+        <div>
+          <div class="branch-card-head">
+            <div><h3>فرع الدمام</h3><div class="district">حي الشاطئ</div></div>
+            <span class="verified-badge"><svg><use href="#ic-check"/></svg>فرع معتمد</span>
+          </div>
+          <ul class="branch-detail-list">
+            <li><svg><use href="#ic-pin"/></svg><div><b>العنوان</b>حي الشاطئ، طريق الملك سعود، الدمام</div></li>
+            <li><svg><use href="#ic-phone"/></svg><div><b>الجوال</b>0541122336</div></li>
+            <li><svg><use href="#ic-clock"/></svg><div><b>ساعات العمل</b>السبت–الخميس 9ص–10م · الجمعة 4م–10م</div></li>
+          </ul>
+          <div class="branch-card-actions">
+            <a href="tel:0541122336" class="btn btn-outline">اتصل بالفرع</a>
+            <a href="contact.html?choice=booking" class="btn btn-primary">احجز موعد</a>
+          </div>
+        </div>
+        <div class="branch-qr">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&bgcolor=ffffff&color=0a0a0b&data=https://www.google.com/maps/search/?api=1%26query=STEK+%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85+%D8%A7%D9%84%D8%B4%D8%A7%D8%B7%D8%A6" alt="QR كود موقع فرع الدمام">
+          <span>امسح للوصول للموقع</span>
+        </div>
+      </article>
+
+      <article class="branch-card reveal" data-search="أبها المنسك">
+        <div>
+          <div class="branch-card-head">
+            <div><h3>فرع أبها</h3><div class="district">حي المنسك</div></div>
+            <span class="verified-badge"><svg><use href="#ic-check"/></svg>فرع معتمد</span>
+          </div>
+          <ul class="branch-detail-list">
+            <li><svg><use href="#ic-pin"/></svg><div><b>العنوان</b>حي المنسك، طريق الملك عبدالعزيز، أبها</div></li>
+            <li><svg><use href="#ic-phone"/></svg><div><b>الجوال</b>0541122337</div></li>
+            <li><svg><use href="#ic-clock"/></svg><div><b>ساعات العمل</b>السبت–الخميس 9ص–10م · الجمعة 4م–10م</div></li>
+          </ul>
+          <div class="branch-card-actions">
+            <a href="tel:0541122337" class="btn btn-outline">اتصل بالفرع</a>
+            <a href="contact.html?choice=booking" class="btn btn-primary">احجز موعد</a>
+          </div>
+        </div>
+        <div class="branch-qr">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&bgcolor=ffffff&color=0a0a0b&data=https://www.google.com/maps/search/?api=1%26query=STEK+%D8%A3%D8%A8%D9%87%D8%A7+%D8%A7%D9%84%D9%85%D9%86%D8%B3%D9%83" alt="QR كود موقع فرع أبها">
+          <span>امسح للوصول للموقع</span>
+        </div>
+      </article>
+
+      <article class="branch-card reveal" data-search="خميس مشيط الضباط">
+        <div>
+          <div class="branch-card-head">
+            <div><h3>فرع خميس مشيط</h3><div class="district">حي الضباط</div></div>
+            <span class="verified-badge"><svg><use href="#ic-check"/></svg>فرع معتمد</span>
+          </div>
+          <ul class="branch-detail-list">
+            <li><svg><use href="#ic-pin"/></svg><div><b>العنوان</b>حي الضباط، شارع الأمير سلطان، خميس مشيط</div></li>
+            <li><svg><use href="#ic-phone"/></svg><div><b>الجوال</b>0541122338</div></li>
+            <li><svg><use href="#ic-clock"/></svg><div><b>ساعات العمل</b>السبت–الخميس 9ص–10م · الجمعة 4م–10م</div></li>
+          </ul>
+          <div class="branch-card-actions">
+            <a href="tel:0541122338" class="btn btn-outline">اتصل بالفرع</a>
+            <a href="contact.html?choice=booking" class="btn btn-primary">احجز موعد</a>
+          </div>
+        </div>
+        <div class="branch-qr">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&bgcolor=ffffff&color=0a0a0b&data=https://www.google.com/maps/search/?api=1%26query=STEK+%D8%AE%D9%85%D9%8A%D8%B3+%D9%85%D8%B4%D9%8A%D8%B7+%D8%A7%D9%84%D8%B6%D8%A8%D8%A7%D8%B7" alt="QR كود موقع فرع خميس مشيط">
+          <span>امسح للوصول للموقع</span>
+        </div>
+      </article>
+
+      <article class="branch-card reveal" data-search="تبوك الفيصلية">
+        <div>
+          <div class="branch-card-head">
+            <div><h3>فرع تبوك</h3><div class="district">حي الفيصلية</div></div>
+            <span class="verified-badge"><svg><use href="#ic-check"/></svg>فرع معتمد</span>
+          </div>
+          <ul class="branch-detail-list">
+            <li><svg><use href="#ic-pin"/></svg><div><b>العنوان</b>حي الفيصلية، طريق الملك خالد، تبوك</div></li>
+            <li><svg><use href="#ic-phone"/></svg><div><b>الجوال</b>0541122339</div></li>
+            <li><svg><use href="#ic-clock"/></svg><div><b>ساعات العمل</b>السبت–الخميس 9ص–10م · الجمعة 4م–10م</div></li>
+          </ul>
+          <div class="branch-card-actions">
+            <a href="tel:0541122339" class="btn btn-outline">اتصل بالفرع</a>
+            <a href="contact.html?choice=booking" class="btn btn-primary">احجز موعد</a>
+          </div>
+        </div>
+        <div class="branch-qr">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&bgcolor=ffffff&color=0a0a0b&data=https://www.google.com/maps/search/?api=1%26query=STEK+%D8%AA%D8%A8%D9%88%D9%83+%D8%A7%D9%84%D9%81%D9%8A%D8%B5%D9%84%D9%8A%D8%A9" alt="QR كود موقع فرع تبوك">
+          <span>امسح للوصول للموقع</span>
+        </div>
+      </article>
+
+      <article class="branch-card reveal" data-search="المدينة المنورة قباء">
+        <div>
+          <div class="branch-card-head">
+            <div><h3>فرع المدينة المنورة</h3><div class="district">حي قباء</div></div>
+            <span class="verified-badge"><svg><use href="#ic-check"/></svg>فرع معتمد</span>
+          </div>
+          <ul class="branch-detail-list">
+            <li><svg><use href="#ic-pin"/></svg><div><b>العنوان</b>حي قباء، طريق الهجرة، المدينة المنورة</div></li>
+            <li><svg><use href="#ic-phone"/></svg><div><b>الجوال</b>0541122340</div></li>
+            <li><svg><use href="#ic-clock"/></svg><div><b>ساعات العمل</b>السبت–الخميس 9ص–10م · الجمعة 4م–10م</div></li>
+          </ul>
+          <div class="branch-card-actions">
+            <a href="tel:0541122340" class="btn btn-outline">اتصل بالفرع</a>
+            <a href="contact.html?choice=booking" class="btn btn-primary">احجز موعد</a>
+          </div>
+        </div>
+        <div class="branch-qr">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&bgcolor=ffffff&color=0a0a0b&data=https://www.google.com/maps/search/?api=1%26query=STEK+%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9+%D9%82%D8%A8%D8%A7%D8%A1" alt="QR كود موقع فرع المدينة المنورة">
+          <span>امسح للوصول للموقع</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="no-results">
+      <h3>ما فيه فروع مطابقة</h3>
+      <p>جرّبي تبحثي باسم مدينة أو حي تاني، أو <a href="contact.html" style="color:var(--red)">تواصلي معنا</a> مباشرة.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-brand-col">
+        <a href="index.html" class="footer-logo">
+          <img src="assets/logo.png" alt="STEK">
+        </a>
+        <p>الدفاع المثالي لسيارتك يبدأ من STEK.<br>حلول حماية احترافية بمعايير عالمية.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#packages">الباقات</a></li>
+          <li><a href="branches.html">فروعنا</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>الخدمات</h4>
+        <ul>
+          <li><a href="#services">أفلام الحماية PPF</a></li>
+          <li><a href="#services">العزل الحراري</a></li>
+          <li><a href="#services">النانو سيراميك</a></li>
+          <li><a href="#services">التلميع</a></li>
+          <li><a href="#services">حماية الزجاج</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li>
+            <span class="label">الجوال</span>
+            <a href="tel:0534805488">0534805488</a>
+          </li>
+          <li>
+            <span class="label">البريد</span>
+            <a href="mailto:info@stek-sa.com">info@stek-sa.com</a>
+          </li>
+          <li>
+            <span class="label">العنوان</span>
+            <p>مركز الخريف التجاري، مكتب 605<br>حي الفيصلية، جدة</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 STEK Saudi Arabia — جميع الحقوق محفوظة</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" />
+          </svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M4 4l16 16M20 4 4 20" />
+          </svg></a>
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 18l-1.5 3L8 19.4A8 8 0 1 0 4 12c0 1.5.4 2.9 1 4Z" />
+          </svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

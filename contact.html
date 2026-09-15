@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HM STEK</title>
+<meta name="description" content="تواصل مع STEK أو احجز موعد تركيب أفلام الحماية، العزل الحراري، التلميع أو النانو سيراميك في أقرب فرع لك.">
+<link rel="stylesheet" href="assets/style-sub.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22Z" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="9.3" r="2.6" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+  <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M6 3h3l2 5-2.4 1.6a12 12 0 0 0 5.8 5.8L16 13l5 2v3a2 2 0 0 1-2 2C10.7 20 4 13.3 4 5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-mail" viewBox="0 0 24 24"><path d="M4 5h16v14H4V5Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M12 7v5l4 2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></symbol>
+</svg>
+
+<header class="nav" id="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="STEK">
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="packages.html">الباقات</a></li>
+        <li><a href="#warranty">الضمان</a></li>
+        <li><a href="branches.html">فروعنا</a></li>
+        <li><a href="franchise.html">قطاع الاعمال</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="contact.html?choice=booking" class="btn btn-primary">احجز موعد</a>
+    </div>
+
+    <button class="nav-burger" id="navBurger" aria-label="القائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">الرئيسية</a><span>/</span><span>تواصل معنا</span></div>
+    <h1>تواصل معنا أو احجز موعدك</h1>
+    <p>عبّئ البيانات وفريقنا هيتواصل معك خلال وقت قصير لتأكيد الموعد أو الرد على استفسارك.</p>
+  </div>
+</section>
+
+<section class="section contact-body">
+  <div class="container">
+
+    <div class="form-card reveal">
+      <h3>احجز موعدك الآن</h3>
+      <p>الحقول المعلّمة بـ <span style="color:var(--red)">*</span> مطلوبة</p>
+
+      <form data-validate action="https://formsubmit.co/info@stek-sa.com" method="POST">
+        <input type="hidden" name="_subject" value="طلب تواصل / حجز موعد جديد من موقع STEK">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="field" data-required>
+          <label>الاسم الكامل <span class="req">*</span></label>
+          <input type="text" name="الاسم" placeholder="اسمك بالكامل">
+          <div class="error"></div>
+        </div>
+
+        <div class="field" data-required>
+          <label>رقم الجوال <span class="req">*</span></label>
+          <input type="tel" name="رقم الجوال" data-phone inputmode="numeric" placeholder="05XXXXXXXX">
+          <div class="hint">أرقام فقط، بدون رموز أو مسافات</div>
+          <div class="error"></div>
+        </div>
+
+        <div class="field" data-required>
+          <label>الخدمة أو الباقة <span class="req">*</span></label>
+          <select name="الخدمة / الباقة" id="choiceSelect" class="styled">
+            <option value="booking">استفسار عام / حجز موعد</option>
+            <optgroup label="الخدمات">
+              <option value="srv-ppf">أفلام الحماية PPF</option>
+              <option value="srv-insulation">أفلام العزل الحراري</option>
+              <option value="srv-polish">التلميع</option>
+              <option value="srv-ceramic">النانو سيراميك</option>
+              <option value="srv-glass">حماية الزجاج</option>
+              <option value="srv-products">منتجات العناية</option>
+            </optgroup>
+            <optgroup label="الباقات">
+              <option value="pkg-insulation">باقة العازل الحراري</option>
+              <option value="pkg-economy">الباقة الاقتصادية</option>
+              <option value="pkg-silver">الباقة الفضية</option>
+              <option value="pkg-gold">الباقة الذهبية</option>
+              <option value="pkg-diamond">الباقة الماسية</option>
+              <option value="pkg-color">باقة الحماية الملوّنة</option>
+            </optgroup>
+          </select>
+          <div class="error"></div>
+        </div>
+
+        <div class="field-row">
+          <div class="field" data-required>
+            <label>الفرع <span class="req">*</span></label>
+            <select name="الفرع" class="styled">
+              <option value="">اختر الفرع</option>
+              <option>جدة</option>
+              <option>مكة المكرمة</option>
+              <option>الرياض</option>
+              <option>الدمام</option>
+              <option>أبها</option>
+              <option>خميس مشيط</option>
+              <option>تبوك</option>
+              <option>المدينة المنورة</option>
+            </select>
+            <div class="error"></div>
+          </div>
+          <div class="field" data-required>
+            <label>التاريخ المفضل <span class="req">*</span></label>
+            <input type="date" name="التاريخ المفضل">
+            <div class="error"></div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>تفاصيل إضافية</label>
+          <textarea name="ملاحظات" placeholder="اكتب أي تفاصيل تساعدنا في تجهيز موعدك (موديل السيارة، سنة الصنع...)"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">إرسال الطلب</button>
+        <div class="form-status"></div>
+      </form>
+    </div>
+
+    <div class="contact-side reveal">
+      <div class="side-card"><svg><use href="#ic-phone"/></svg><div><b>اتصل بنا</b><span>0534805488</span></div></div>
+      <div class="side-card"><svg><use href="#ic-mail"/></svg><div><b>راسلنا</b><span>info@stek-sa.com</span></div></div>
+      <div class="side-card"><svg><use href="#ic-pin"/></svg><div><b>المقر الرئيسي</b><span>مركز الخريف التجاري، مكتب 605، حي الفيصلية، طريق المدينة المنورة، جدة</span></div></div>
+      <div class="side-card"><svg><use href="#ic-clock"/></svg><div><b>ساعات العمل</b><span>يوميًا من 9 صباحًا حتى 10 مساءً</span></div></div>
+      <div class="side-card"><svg><use href="#ic-pin"/></svg><div><b>فروعنا</b><span>جدة · مكة · الرياض · الدمام · أبها · خميس مشيط · تبوك · المدينة المنورة</span></div></div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-brand-col">
+        <a href="index.html" class="footer-logo">
+          <img src="assets/logo.png" alt="STEK">
+        </a>
+        <p>الدفاع المثالي لسيارتك يبدأ من STEK.<br>حلول حماية احترافية بمعايير عالمية.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#packages">الباقات</a></li>
+          <li><a href="branches.html">فروعنا</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>الخدمات</h4>
+        <ul>
+          <li><a href="#services">أفلام الحماية PPF</a></li>
+          <li><a href="#services">العزل الحراري</a></li>
+          <li><a href="#services">النانو سيراميك</a></li>
+          <li><a href="#services">التلميع</a></li>
+          <li><a href="#services">حماية الزجاج</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li>
+            <span class="label">الجوال</span>
+            <a href="tel:0534805488">0534805488</a>
+          </li>
+          <li>
+            <span class="label">البريد</span>
+            <a href="mailto:info@stek-sa.com">info@stek-sa.com</a>
+          </li>
+          <li>
+            <span class="label">العنوان</span>
+            <p>مركز الخريف التجاري، مكتب 605<br>حي الفيصلية، جدة</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 STEK Saudi Arabia — جميع الحقوق محفوظة</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" />
+          </svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M4 4l16 16M20 4 4 20" />
+          </svg></a>
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 18l-1.5 3L8 19.4A8 8 0 1 0 4 12c0 1.5.4 2.9 1 4Z" />
+          </svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
